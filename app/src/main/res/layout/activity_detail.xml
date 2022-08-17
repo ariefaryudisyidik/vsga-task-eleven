@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.DetailActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edt_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:hint="@string/address"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_name"
+        tools:ignore="Autofill,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="@+id/edt_address"
+        app:layout_constraintStart_toStartOf="@+id/edt_address"
+        app:layout_constraintTop_toBottomOf="@+id/edt_address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

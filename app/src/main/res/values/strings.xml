@@ -1,3 +1,7 @@
+
 <resources>
-    <string name="app_name">VSGATaskEleven</string>
+    <string name="app_name">Proyek 4 SQLite</string>
+    <string name="name">Nama</string>
+    <string name="address">Alamat</string>
+    <string name="submit">Submit</string>
 </resources>
